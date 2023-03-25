@@ -10,6 +10,12 @@
             .textShadow {
                 text-shadow: -3px 3px 0 #EF684F;
             }
+            .nameShadow {
+                text-shadow: -3px 3px 0 #FFA45D;
+            }
+            .navShadow {
+                text-shadow: -2px 2px 0 #FFA45D;
+            }
         }
     </style>
     <script>
@@ -20,9 +26,11 @@
                 coral: '#EF684F',
                 tangerine: '#FDA442',
                 peach: '#FCCDA9',
+                apricot: '#FFA45D',
                 pale: '#FFE1C9',
                 green: '#5B6440',
-                sky: '#D0DFE5'
+                sky: '#D0DFE5',
+                navy: '#282f4a'
               }
             }
           }
@@ -36,13 +44,13 @@
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
             <a href="">temp</a>
             <div>
-                <button name="hamburger" onclick="Open(this)" class="text-[1.9rem] lg:hidden cursor-pointer text-green">
+                <button name="hamburger" onclick="Open(this)" class="text-[1.9rem] lg:hidden cursor-pointer">
                     &#9776 <!-- Hamburger Menu -->
                 </button>
                 <nav class="hidden lg:block space-x-8" arial-label="main">
-                    <a href="" class="tracking-[0.3rem] hover:">Home</a>
-                    <a href="" class="tracking-[0.3rem] hover:">Portfolio</a>
-                    <a href="" class="tracking-[0.3rem] hover:">Contact</a>
+                    <a href="" class="text-navy tracking-[0.3rem] hover:navShadow duration-500">Home</a>
+                    <a href="" class="text-navy tracking-[0.3rem] hover:navShadow duration-500">Portfolio</a>
+                    <a href="" class="text-navy tracking-[0.3rem] hover:navShadow duration-500">Contact</a>
                 </nav>
             </div>
         </section>
@@ -62,17 +70,21 @@
             </div>
         </div>
     </header>
-    <main class="max-w-4xl mx-auto h-screen items-center">
-        <!-- Intro -->
-        <!-- Figure out how to center in middle of screen (y-axis) -->
-        <div>
-            <h1 class="text-[2rem] tracking-[0.15rem] font-medium flex justify-center z-10">nice to meet you</h1>
-            <div class="flex justify-center -z-10">
-                <img src="pictures/julia.jpg" alt="profile" class="-mt-[2rem] rounded-full w-[15rem]">
+    <main>
+        <div class="max-w-4xl mx-auto h-screen flex items-center justify-center -mt-[3.5rem]"> <!-- -mt used to temporarily reduce extra spacing -->
+            <!-- Intro -->
+            <div>
+                <!-- Get text to overlap image -->
+                <h1 class="text-[2rem] tracking-[0.25rem] font-medium flex justify-center text-navy">nice to meet you</h1>
+                <div class="flex justify-center z-0">
+                    <img src="pictures/julia.jpg" alt="profile" class="-mt-[2rem] rounded-full w-[15rem]">
+                </div>
+                <div class="flex justify-center -mt-[70px] z-10">
+                    <p class="tracking-[0.5rem] font-black text-[4rem] text-navy nameShadow">I'm Julia</p>
+                </div>
             </div>
-            <div class="flex justify-center -mt-[55px] z-10">
-                <p class="tracking-[0.5rem] font-black text-[3.5rem]">I'm Julia</p>
-            </div>
+        </div>
+        <div class="bg-peach h-[25rem]">
         </div>
     </main>
     <script>
