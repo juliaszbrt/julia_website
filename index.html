@@ -40,9 +40,9 @@
                     &#9776 <!-- Hamburger Menu -->
                 </button>
                 <nav class="hidden lg:block space-x-8" arial-label="main">
-                    <a href="" class="hover:">Home</a>
-                    <a href="" class="hover:">Portfolio</a>
-                    <a href="" class="hover:">Contact</a>
+                    <a href="" class="tracking-[0.3rem] hover:">Home</a>
+                    <a href="" class="tracking-[0.3rem] hover:">Portfolio</a>
+                    <a href="" class="tracking-[0.3rem] hover:">Contact</a>
                 </nav>
             </div>
         </section>
@@ -62,12 +62,17 @@
             </div>
         </div>
     </header>
-    <main class="max-w-4xl mx-auto h-screen">
+    <main class="max-w-4xl mx-auto h-screen items-center">
         <!-- Intro -->
         <!-- Figure out how to center in middle of screen (y-axis) -->
         <div>
-            <h1 class="text-[2rem] tracking-[0.15rem] font-medium">nice to meet you.</h1>
-            <img src="pictures/julia.jpg" alt="profile" class="rounded-full w-[15rem]">
+            <h1 class="text-[2rem] tracking-[0.15rem] font-medium flex justify-center z-10">nice to meet you</h1>
+            <div class="flex justify-center -z-10">
+                <img src="pictures/julia.jpg" alt="profile" class="-mt-[2rem] rounded-full w-[15rem]">
+            </div>
+            <div class="flex justify-center -mt-[55px] z-10">
+                <p class="tracking-[0.5rem] font-black text-[3.5rem]">I'm Julia</p>
+            </div>
         </div>
     </main>
     <script>
