@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-pt-[5rem] md:scroll-pt-[6.5rem] lg:scroll-pt-[4.7rem]">
+<html lang="en" class="scroll-smooth scroll-pt-[4.8rem] md:scroll-pt-[4.9rem] lg:scroll-pt-[3.52rem]">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,23 +22,25 @@
     </style>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                coral: '#EF684F',
-                tangerine: '#FDA442',
-                peach: '#FCCDA9',
-                apricot: '#FFA45D',
-                pale: '#FFE1C9',
-                green: '#5B6440',
-                sky: '#D0DFE5',
-                navy: '#282f4a'
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        coral: '#EF684F',
+                        tangerine: '#FDA442',
+                        peach: '#FCCDA9',
+                        apricot: '#FFA45D',
+                        pale: '#FFE1C9',
+                        green: '#AFC9A0',
+                        sky: '#B0C5D0',
+                        navy: '#282f4a',
+                        paler: '#FFECDD'
+                    }
+                }
             }
-          }
         }
     </script>
 </head>
+
 <body class="bg-pale" id="home">
     <!-- Navbar -->
     <!-- Get anchors to jump back to home page (not working??) -->
@@ -50,18 +53,22 @@
                 </button>
                 <nav class="hidden lg:block space-x-8" arial-label="main">
                     <a href="#" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">About</a>
-                    <a href="#projects" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Projects</a>
+                    <a href="#projects"
+                        class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Projects</a>
                     <a href="" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Contact</a>
                 </nav>
             </div>
         </section>
         <!-- Hamburger Menu -->
         <div class="fixed bg-apricot text-white font-bold tracking-[0.3rem] top-0 
-        w-0 h-[100vh] flex justify-center items-center text-[1.875rem] overflow-hidden origin-left duration-500 lg:hidden" id="hammm">
+        w-0 h-[100vh] flex justify-center items-center text-[1.875rem] overflow-hidden origin-left duration-500 lg:hidden"
+            id="hammm">
             <ul>
                 <li class="hover:textShadow duration-500"><a href="#" name="close" onclick="Close(this)">About</a></li>
-                <li class="hover:textShadow duration-500"><a href="#projects" name="close" onclick="Close(this)">Projects</a></li>
-                <li class="hover:textShadow duration-500"><a href="#" name="close" onclick="Close(this)">Contact</a></li>
+                <li class="hover:textShadow duration-500"><a href="#projects" name="close"
+                        onclick="Close(this)">Projects</a></li>
+                <li class="hover:textShadow duration-500"><a href="#" name="close" onclick="Close(this)">Contact</a>
+                </li>
             </ul>
             <!-- Close Button -->
             <div class="absolute mx-auto right-[45px] top-[20px] text-[40px] cursor-pointer">
@@ -72,9 +79,10 @@
         </div>
     </header>
     <main>
-        <div class="max-w-4xl mx-auto h-screen flex items-center justify-center -mt-[3.5rem]"> <!-- -mt used to temporarily reduce extra spacing -->
+        <div class="max-w-4xl mx-auto h-screen flex items-center justify-center -mt-[3.5rem]">
+            <!-- -mt used to temporarily reduce extra spacing -->
             <!-- Intro -->
-            <div>
+            <div class="">
                 <!-- <h1 class="text-[2rem] tracking-[0.25rem] font-medium flex justify-center text-navy">hello there,</h1> -->
                 <div class="flex justify-center z-0">
                     <img src="pictures/julia.jpg" alt="profile" class="mt-[1.2rem] rounded-full w-[15rem]">
@@ -83,26 +91,45 @@
                     <p class="tracking-[0.5rem] font-black text-[4rem] text-navy nameShadow">I'm Julia</p>
                 </div>
                 <div>
-                    <p class="text-[1.5rem] -mt-[0.5rem] tracking-[0.25rem] font-medium flex justify-center text-navy">nice to meet you</p>
+                    <p class="text-[1.5rem] -mt-[0.5rem] tracking-[0.25rem] font-medium flex justify-center text-navy">
+                        nice to meet you</p>
                 </div>
             </div>
         </div>
+        <!-- About Me Section -->
+        <!-- Center items vertically (items-center doesn't work?!)-->
+        <section class="bg-pale h-screen">
+            <div class="m-auto flex bg-green h-[18rem] items-center">
+                <img src="pictures/mtl.JPG" class="object-scale-down h-[30rem] w-screen rounded-lg md:h-[50p] lg:h-[35rem]">
+            </div>
+            <p class="text-bold mx-[2.2rem] mt-[8rem] tracking-[2px] text-[1rem] text-navy text-center">I'm a 19 year
+                old computer science major studying at Toronto Metropolitan University.
+                I am passionate about implementing creative + meaningful designs in my work. </p>
+        </section>
+        <div class="flex justify-center gap-[1.5rem]">
+            <img src="pictures/mochi.png" class="rounded-t-full h-[12rem]">
+            <img src="pictures/moogi2.jpg" class="rounded-t-full h-[12rem]">
+        </div>
         <!-- Projects Section -->
-        <section id="projects" class="h-screen">
-            <div class="flex rounded-xl justify-center m-[3rem] h-[85%] bg-cover bg-no-repeat bg-[url('pictures/mobile_blobs.png')]
+        <!-- Center items vertically -->
+        <div id="projects" class=" h-screen bg-paler">
+            <div class="flex rounded-xl justify-center mx-[3rem] h-full bg-cover bg-no-repeat bg-[url('pictures/mobile_blobs.png')]
             md:bg-[url('pictures/tablet-blobs.png')]
-            lg:bg-[url('pictures/blobs.png')] ">
-                <h1 class="flex justify-center text-navy font-bold tracking-[0.5rem] text-[1.5rem] p-[2rem]">projects</h1>
+            lg:bg-[url('pictures/blobs.png')]">
                 <!-- Projects go here -->
-                <div>
-                    <div></div>
+                <div class="m-auto">
+                    <div>jjjjj</div>
                 </div>
             </div>
+        </div>
+        <!-- Contact -->
+        <section>
+
         </section>
     </main>
     <script>
         let ham = document.
-        getElementById('hammm')
+            getElementById('hammm')
         function Open() {
             ham.classList.add('w-[100%]')
         }
@@ -111,4 +138,5 @@
         }
     </script>
 </body>
+
 </html>
