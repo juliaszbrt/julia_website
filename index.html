@@ -18,6 +18,9 @@
             .navShadow {
                 text-shadow: -2px 2px 0 #FFA45D;
             }
+            .aboutShadow {
+                text-shadow: -2px 2px 0 white;
+            }
         }
     </style>
     <script>
@@ -33,7 +36,8 @@
                         green: '#AFC9A0',
                         sky: '#B0C5D0',
                         navy: '#282f4a',
-                        paler: '#FFECDD'
+                        paler: '#FFECDD',
+                        darkGreen: '#668455'
                     },
                     dropShadow: {
                         'xl': '-6px 5px 0 #B0C5D0'
@@ -102,9 +106,9 @@
             <div class="mt-[5rem] flex bg-green h-[15rem] items-center justify-center md:m-[7rem] md:h-[20rem]">
                 <img id="about"src="pictures/mtl.JPG" class="h-[20rem]  md:h-[25rem] lg:h-[35rem] object-contain">
             </div>
-            <div class="">
-                <p class="text-bold mx-[2.2rem] mt-[6rem] tracking-[2px] text-[0.7rem] text-navy text-center">I'm a first year computer science major studying at <b class="font-bold">Toronto Metropolitan University</b>.
-                    I am passionate about implementing creative + meaningful designs in my work. </p>
+            <div>
+                <p class="font-black mx-[1rem] mt-[6.3rem] tracking-[2px] text-[1rem] text-darkGreen text-center aboutShadow">I'm a first year computer science major studying at Toronto Metropolitan University.</p>
+                <p class="font-medium mx-[1rem] mt-[1rem] tracking-[2px] text-[0.7rem] text-navy text-center">I am passionate about implementing creative + meaningful designs in my work. </p>
             </div>
             <div class="bg-paler mt-[4rem] p-[1.5rem] mb-[3.5rem]">
                 <div class="flex justify-center gap-[1.8rem]">
@@ -113,16 +117,17 @@
                     <img src="pictures/moogi2.jpg" class="rounded-t-full h-[10rem] <--!drop-shadow-xl-->">
                 </div>
                 <div>
-                    <p class="text-bold mx-[3rem] mt-[1.5rem] tracking-[2px] text-[0.7rem] text-navy text-center">These are my cats; aren't they pretty :)</p>
+                    <p class="font-medium mx-[3rem] mt-[1.5rem] tracking-[2px] text-[0.7rem] text-navy text-center">These are my cats; look how pretty :)</p>
                 </div>
             </div>
         </section>
         <!-- Projects Section -->
         <div id="projects" class="h-[15rem] bg-paler items-center flex justify-center">
-            <div class="bg-green flex justify-center h-[80%] w-[80%]">
+            <div class="bg-green flex justify-center h-[70%] w-[80%]">
+                <h1 class="font-bold tracking-[0.3rem] text-[2rem] text-darkGreen aboutShadow -mt-[1.7rem] -ml-[1rem]">my work</h1>
                 <!-- Projects go here -->
                 <div class="m-auto">
-                    <div class=""><!--Project 1--></div>
+                    <div class="bg-blue"><!--Project 1--></div>
                 </div>
             </div>
         </div>
