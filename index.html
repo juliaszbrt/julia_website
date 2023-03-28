@@ -52,7 +52,7 @@
                     &#9776 <!-- Hamburger Menu -->
                 </button>
                 <nav class="hidden lg:block space-x-8" arial-label="main">
-                    <a href="#" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">About</a>
+                    <a href="#about" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">About</a>
                     <a href="#projects"
                         class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Projects</a>
                     <a href="" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Contact</a>
@@ -64,9 +64,8 @@
         w-0 h-[100vh] flex justify-center items-center text-[1.875rem] overflow-hidden origin-left duration-500 lg:hidden"
             id="hammm">
             <ul>
-                <li class="hover:textShadow duration-500"><a href="#" name="close" onclick="Close(this)">About</a></li>
-                <li class="hover:textShadow duration-500"><a href="#projects" name="close"
-                        onclick="Close(this)">Projects</a></li>
+                <li class="hover:textShadow duration-500"><a href="#about" name="close" onclick="Close(this)">About</a></li>
+                <li class="hover:textShadow duration-500"><a href="#projects" name="close" onclick="Close(this)">Projects</a></li>
                 <li class="hover:textShadow duration-500"><a href="#" name="close" onclick="Close(this)">Contact</a>
                 </li>
             </ul>
@@ -82,8 +81,7 @@
         <div class="max-w-4xl mx-auto h-screen flex items-center justify-center -mt-[3.5rem]">
             <!-- -mt used to temporarily reduce extra spacing -->
             <!-- Intro -->
-            <div class="">
-                <!-- <h1 class="text-[2rem] tracking-[0.25rem] font-medium flex justify-center text-navy">hello there,</h1> -->
+            <div class="m-auto">
                 <div class="flex justify-center z-0">
                     <img src="pictures/julia.jpg" alt="profile" class="mt-[1.2rem] rounded-full w-[15rem]">
                 </div>
@@ -98,27 +96,27 @@
         </div>
         <!-- About Me Section -->
         <!-- Center items vertically (items-center doesn't work?!)-->
-        <section class="bg-pale h-screen">
-            <div class="m-auto flex bg-green h-[18rem] items-center">
-                <img src="pictures/mtl.JPG" class="object-scale-down h-[30rem] w-screen rounded-lg md:h-[50p] lg:h-[35rem]">
+        <section class="bg-pale h-auto p-[2rem]">
+            <div class="mt-[5rem] flex bg-green h-[15rem] items-center justify-center">
+                <img id="about"src="pictures/mtl.JPG" class="rounded-xl h-[20rem]  md:h-[50p] lg:h-[35rem] object-contain">
             </div>
-            <p class="text-bold mx-[2.2rem] mt-[8rem] tracking-[2px] text-[1rem] text-navy text-center">I'm a 19 year
-                old computer science major studying at Toronto Metropolitan University.
+            <p class="text-bold mx-[2.2rem] mt-[5rem] tracking-[2px] text-[0.7rem] text-navy text-center">I'm a first year computer science major studying at <b class="font-bold">Toronto Metropolitan University</b>.
                 I am passionate about implementing creative + meaningful designs in my work. </p>
+            <div class="flex justify-center gap-[1.5rem] mt-[2rem]">
+                <img src="pictures/mochi.png" class="rounded-t-full h-[10rem]">
+                <img src="pictures/moogi2.jpg" class="rounded-t-full h-[10rem]">
+            </div>
+            <div>
+                <p class="text-bold mx-[4rem] mt-[1rem] tracking-[2px] text-[0.7rem] text-navy text-center">These are my cats; aren't they pretty :)</p>
+            </div>
         </section>
-        <div class="flex justify-center gap-[1.5rem]">
-            <img src="pictures/mochi.png" class="rounded-t-full h-[12rem]">
-            <img src="pictures/moogi2.jpg" class="rounded-t-full h-[12rem]">
-        </div>
         <!-- Projects Section -->
         <!-- Center items vertically -->
-        <div id="projects" class=" h-screen bg-paler">
-            <div class="flex rounded-xl justify-center mx-[3rem] h-full bg-cover bg-no-repeat bg-[url('pictures/mobile_blobs.png')]
-            md:bg-[url('pictures/tablet-blobs.png')]
-            lg:bg-[url('pictures/blobs.png')]">
+        <div id="projects" class="h-[15rem] bg-paler items-center flex justify-center">
+            <div class="flex rounded-xl justify-center h-[80%] w-[80%] bg-cover bg-no-repeat bg-sky">
                 <!-- Projects go here -->
                 <div class="m-auto">
-                    <div>jjjjj</div>
+                    <div class="">hello</div>
                 </div>
             </div>
         </div>
