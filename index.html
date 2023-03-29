@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-pt-[4.8rem] md:scroll-pt-[4.9rem] lg:scroll-pt-[3.52rem]">
+<html lang="en" class="scroll-smooth scroll-pt-[4.8rem] md:scroll-pt-[9rem] lg:scroll-pt-[3.52rem]">
 
 <head>
     <meta charset="UTF-8">
@@ -20,6 +20,9 @@
             }
             .aboutShadow {
                 text-shadow: -2px 2px 0 white;
+            }
+            .emailShadow {
+                text-shadow: -2px 2px 0 #B0C5D0;
             }
         }
     </style>
@@ -52,15 +55,15 @@
     <!-- Navbar -->
     <header class="sticky top-0 bg-pale">
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
-            <a href="#home" class="font-bold tracking-[0.3rem] text-navy hover:navShadow duration-500">js</a>
+            <a href="#home" class="font-bold tracking-[0.3rem] text-navy hover:navShadow duration-500 md:text-[2rem] lg:text-[1rem]">js</a>
             <div>
-                <button name="hamburger" onclick="Open(this)" class="text-[1.9rem] lg:hidden cursor-pointer">
+                <button name="hamburger" onclick="Open(this)" class="text-[1.9rem] md:text-[3rem] lg:hidden cursor-pointer">
                     &#9776 <!-- Hamburger Menu -->
                 </button>
                 <nav class="hidden lg:block space-x-8" arial-label="main">
+                    <a href="#home" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Home</a>
                     <a href="#about" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">About</a>
-                    <a href="#projects"
-                        class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Projects</a>
+                    <a href="#projects" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Projects</a>
                     <a href="contact" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Contact</a>
                 </nav>
             </div>
@@ -70,13 +73,14 @@
         w-0 h-[100vh] flex justify-center items-center text-[1.875rem] overflow-hidden origin-left duration-500 lg:hidden"
             id="hammm">
             <ul>
-                <li class="hover:textShadow duration-500"><a href="#about" name="close" onclick="Close(this)">About</a></li>
-                <li class="hover:textShadow duration-500"><a href="#projects" name="close" onclick="Close(this)">Projects</a></li>
-                <li class="hover:textShadow duration-500"><a href="#contact" name="close" onclick="Close(this)">Contact</a>
+                <li class="hover:textShadow duration-500 md:text-[3rem]"><a href="#home" name="close" onclick="Close(this)">Home</a></li>
+                <li class="hover:textShadow duration-500 md:text-[3rem]"><a href="#about" name="close" onclick="Close(this)">About</a></li>
+                <li class="hover:textShadow duration-500 md:text-[3rem]"><a href="#projects" name="close" onclick="Close(this)">Projects</a></li>
+                <li class="hover:textShadow duration-500 md:text-[3rem]"><a href="#contact" name="close" onclick="Close(this)">Contact</a>
                 </li>
             </ul>
             <!-- Close Button -->
-            <div class="absolute mx-auto right-[45px] top-[20px] text-[40px] cursor-pointer">
+            <div class="absolute mx-auto right-[30px] top-[10px] text-[40px] cursor-pointer md:text-[3rem]">
                 <button name="close" onclick="Close(this)">
                     &times <!-- x -->
                 </button>
@@ -84,46 +88,49 @@
         </div>
     </header>
     <main>
-        <div class="max-w-4xl mx-auto h-screen flex items-center justify-center -mt-[3.5rem]">
+        <div class="max-w-4xl mx-auto h-screen flex items-center justify-center -mt-[4rem]">
             <!-- -mt used to temporarily reduce extra spacing -->
             <!-- Intro -->
-            <div class="m-auto">
-                <div class="flex justify-center z-0">
-                    <img alt="main-profile" src="pictures/julia.jpg" alt="profile" class="mt-[1.2rem] rounded-full w-[15rem]">
+            <div class="m-auto lg:pt-[2rem]">
+                <div class="flex justify-center">
+                    <img alt="main-profile" src="pictures/julia.jpg" alt="profile" class="mt-[1.2rem] rounded-full w-[15rem] md:w-[20rem] lg:w-[15rem]">
                 </div>
                 <div class="flex justify-center -mt-[70px] z-10">
-                    <p class="tracking-[0.5rem] font-black text-[4rem] text-navy nameShadow">I'm Julia</p>
+                    <p class="tracking-[0.5rem] font-black text-[4rem] text-navy nameShadow md:text-[5rem] lg:text-[4rem]">I'm Julia</p>
                 </div>
                 <div>
-                    <p class="text-[1.5rem] -mt-[0.5rem] tracking-[0.25rem] font-medium flex justify-center text-navy">
+                    <p class="text-[1.5rem] -mt-[0.5rem] tracking-[0.25rem] font-medium flex justify-center text-navy md:text-[2rem] lg:text-[1.5rem]">
                         nice to meet you</p>
                 </div>
             </div>
         </div>
         <!-- About Me Section -->
-        <section class="bg-pale h-auto p-[2rem]">
-            <div class="mt-[5rem] flex bg-green h-[15rem] items-center justify-center md:m-[7rem] md:h-[20rem]">
-                <img id="about"src="pictures/mtl.JPG" class="h-[20rem]  md:h-[25rem] lg:h-[35rem] object-contain">
-            </div>
-            <div>
-                <p class="font-black mx-[1rem] mt-[6.3rem] tracking-[2px] text-[1rem] text-darkGreen text-center aboutShadow">I'm a first year computer science major studying at Toronto Metropolitan University.</p>
-                <p class="font-medium mx-[1rem] mt-[1rem] tracking-[2px] text-[0.7rem] text-navy text-center">I am passionate about implementing creative + meaningful designs in my work. </p>
-            </div>
-            <div class="bg-paler mt-[4rem] p-[1.5rem] mb-[3.5rem]">
-                <div class="flex justify-center gap-[1.8rem]">
-                    <!-- drop shadow causing images to float over hamburger menu -->
-                    <img alt="cat1" src="pictures/momo.png" class="rounded-t-full h-[10rem] <--!drop-shadow-xl-->">
-                    <img alt="cat2" src="pictures/moogi2.jpg" class="rounded-t-full h-[10rem] <--!drop-shadow-xl-->">
+        <div class="flex items-center md:mt-[8rem]">
+            <section class="bg-pale h-auto p-[2rem] md:h-screen">
+                <div class="mt-[5rem] flex bg-green h-[15rem] items-center justify-center md:mx-[10rem]">
+                    <img id="about"src="pictures/mtl.JPG" class="h-[20rem] md:h-[25rem] lg:h-[28rem] lg:-ml-[20rem]">
                 </div>
                 <div>
-                    <p class="font-medium mx-[3rem] mt-[1.5rem] tracking-[2px] text-[0.7rem] text-navy text-center">These are my cats; look how pretty :)</p>
+                    <p class="font-black mx-[1rem] mt-[6.3rem] tracking-[2px] text-[1rem] text-darkGreen text-center aboutShadow 
+                    md:mx-[11rem] md:mt-[8.5rem] md:text-[1.2rem]">I'm a first year computer science major studying at Toronto Metropolitan University.</p>
+                    <p class="font-medium mx-[1rem] mt-[1rem] tracking-[2px] text-[0.7rem] text-navy text-center md:mx-[10rem] md:text-[1rem]">I am passionate about implementing creative + meaningful designs in my work. </p>
                 </div>
-            </div>
-        </section>
+                <div class="bg-paler mt-[4rem] p-[1.5rem] md:mx-[5rem]">
+                    <div class="flex justify-center gap-[1.5rem]">
+                        <!-- drop shadow causing images to float over hamburger menu -->
+                        <img alt="cat1" src="pictures/momo.png" class="rounded-t-full h-[10rem] <--!drop-shadow-xl-->">
+                        <img alt="cat2" src="pictures/moogi2.jpg" class="rounded-t-full h-[10rem] <--!drop-shadow-xl-->">
+                    </div>
+                    <div>
+                        <p class="font-medium mx-[3rem] mt-[1.5rem] tracking-[2px] text-[0.7rem] text-navy text-center md:text-[1.1rem]">these are my cats :))</p>
+                    </div>
+                </div>
+            </section>
+        </div>
         <!-- Projects Section -->
         <div id="projects" class="h-[15rem] bg-paler items-center flex justify-center">
             <div class="bg-green flex justify-center h-[70%] w-[80%]">
-                <h1 class="font-bold tracking-[0.3rem] text-[2rem] text-darkGreen aboutShadow -mt-[1.7rem] -ml-[1rem]">my work</h1>
+                <h1 class="font-bold tracking-[0.3rem] text-[2rem] text-darkGreen aboutShadow -mt-[1.7rem] -ml-[1rem] md:text-[3rem] md:-mt-[2.5rem]">my work</h1>
                 <!-- Projects go here -->
                 <div class="m-auto">
                     <div class="bg-blue"><!--Project 1--></div>
@@ -132,9 +139,9 @@
         </div>
         <!-- Contact -->
         <section class="h-screen flex justify-center items-center">
-            <div id="contact" class="bg-paler h-[75%] w-[85%]">
-                <div class="flex justify-center -mb-[6rem] mt-[2rem] md:-mb-[9.5rem] md:mt-[5.5rem]">
-                    <img alt="lets-connect" src="pictures/connect.png" class="h-[13rem]">
+            <div id="contact" class="bg-paler h-90vh w-[85%]">
+                <div class="flex justify-center -mb-[6rem] mt-[2rem] md:-mb-[9.5rem] md:mt-[4rem]">
+                    <img alt="lets-connect" src="pictures/connect.png" class="md:h-[13rem]">
                 </div>
                 <div class="mt-[1rem] flex justify-center">
                     <img alt="profile3" src="pictures/dress.jpg" class="h-[20rem] rounded-t-full md:h-[30rem]">
@@ -146,6 +153,8 @@
                     <a href="https://github.com/juliaszbrt" target="_blank"><img alt="github" src="pictures/github.png" class="h-[3rem] hover:opacity-[80%] duration-700 md:h-[4rem]"></a>
                     <a href="https://discordapp.com/users/joolia" target="_blank"><img alt="discord" src="pictures/discord.png" class="h-[3rem] hover:opacity-[80%] duration-700 md:h-[4rem]"></a>
                 </div>
+                <p class="text-[10px] mt-[1.5rem] mb-[0.5rem] flex justify-center tracking-[0.1rem] text-navy md:text-[15px]">...or email me at:</p>
+                <p class="text-[10px] mb-[1.5rem] flex justify-center tracking-[0.1rem] text-navy font-bold hover:emailShadow duration-500 md:text-[15px] md:mb-[4rem]"><a href="mailto: julia.szbrt@gmail.com" target="_blank">julia.szbrt@gmail.com</a></p>
             </div>
         </section>
     </main>
