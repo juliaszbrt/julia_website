@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-pt-[4.8rem] md:scroll-pt-[10rem] lg:scroll-pt-[3.52rem]">
+<html lang="en" class="scroll-smooth scroll-pt-[4.8rem] md:scroll-pt-[10rem] lg:scroll-pt-[2rem]">
 
 <head>
     <meta charset="UTF-8">
@@ -53,7 +53,7 @@
 
 <body class="bg-pale" id="home">
     <!-- Navbar -->
-    <header class="sticky top-0 bg-pale drop-shadow-md">
+    <header class="sticky top-0 bg-pale">
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
             <a href="#home" class="font-bold tracking-[0.3rem] text-navy hover:navShadow duration-500 md:text-[2rem] lg:text-[1rem]">js</a>
             <div>
@@ -62,8 +62,8 @@
                 </button>
                 <nav class="hidden lg:block space-x-8" arial-label="main">
                     <a href="#home" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Home</a>
-                    <a href="#about" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">About</a>
-                    <a href="#projects" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Projects</a>
+                    <a href="#lg-about" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">About</a>
+                    <a href="#lg-projects" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Projects</a>
                     <a href="contact" class="text-navy font-bold tracking-[0.3rem] hover:navShadow duration-500">Contact</a>
                 </nav>
             </div>
@@ -104,8 +104,10 @@
                 </div>
             </div>
         </div>
+        
         <!-- About Me Section -->
-        <div class="flex items-center md:mt-[8rem]">
+        <!-- sm to md -->
+        <div class="flex items-center md:mt-[8rem] lg:hidden">
             <section class="bg-pale h-auto p-[2rem] md:h-screen">
                 <div class="mt-[5rem] flex bg-green h-[15rem] items-center justify-center md:mx-[10rem]">
                     <img id="about"src="pictures/mtl.JPG" class="h-[20rem] md:h-[25rem] lg:h-[28rem] ">
@@ -127,18 +129,44 @@
                 </div>
             </section>
         </div>
+        <!-- lg -->
+        <div id="lg-about" class="hidden lg:flex lg:justify-center">
+            <section class="bg-pale h-screen flex items-center">
+                <div class="bg-green h-[35%] w-[80vw] flex items-center justify-center gap-[3rem]">
+                    <div class="flex-none ml-[3.5rem]">
+                        <img src="pictures/mtl.JPG" class="h-[22rem] rounded-t-full">
+                    </div>
+                    <div class="mr-[3.5rem]">
+                        <p class="font-black tracking-[2px] text-[1rem] text-darkGreen text-center aboutShadow">I'm a first year computer science major studying at Toronto Metropolitan University.</p>
+                        <p class="font-medium mt-[1rem] tracking-[2px] text-[0.7rem] text-navy text-center">I am passionate about implementing creative + meaningful designs in my work. </p>
+                        <div class="flex justify-end -mb-[6rem] mt-[1.5rem] gap-[1rem]">
+                            <div class="">
+                                <img src="pictures/mochi.jpg" class="rounded-full h-[6rem]">
+                            </div>
+                            <div>
+                                <img src="pictures/moogi.jpg" class="rounded-full h-[6rem]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
         <!-- Projects Section -->
         <!-- sm to md -->
         <div id="projects" class="h-[15rem] bg-paler items-center flex justify-center lg:hidden">
             <div class="bg-green flex justify-center h-[70%] w-[80%]">
-                <h1 class="font-bold tracking-[0.3rem] text-[2rem] text-darkGreen aboutShadow -mt-[1.7rem] -ml-[1rem] md:text-[3rem] md:-mt-[2.5rem] lg:">my work</h1>
-                <!-- Projects go here -->
-                <div class="m-auto">
-                    <div class="bg-blue"><!--Project 1--></div>
-                </div>
+                <h1 class="font-bold tracking-[0.3rem] text-[2rem] text-darkGreen aboutShadow -mt-[1.7rem] -ml-[1rem] md:text-[3rem] md:-mt-[2.5rem]">my work</h1>
             </div>
         </div>
-        <!-- Contact -->
+        <!-- lg -->
+        <div id="lg-projects" class="hidden h-screen bg-paler items-center justify-center lg:flex">
+            <div class="bg-green h-[70%] w-[80%]">
+                <h1 class="font-bold tracking-[0.3rem] text-[3rem] text-darkGreen aboutShadow -mt-[2.5rem] ml-[2rem]">my work</h1>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
         <!-- sm to md -->
         <section class="h-screen flex justify-center items-center lg:hidden">
             <div id="contact" class="bg-paler h-90vh w-[85%]">
@@ -159,6 +187,13 @@
                 <p class="text-[10px] mb-[1.5rem] flex justify-center tracking-[0.1rem] text-navy font-bold hover:emailShadow duration-500 md:text-[15px] md:mb-[4rem]"><a href="mailto: julia.szbrt@gmail.com" target="_blank">julia.szbrt@gmail.com</a></p>
             </div>
         </section>
+        <!-- lg -->
+        <section class="hidden h-screen justify-center items-center lg:flex">
+            <div class="bg-paler h-90vh w-[85%]">
+                
+            </div>
+        </section>
+
     </main>
     <script>
         let ham = document.
