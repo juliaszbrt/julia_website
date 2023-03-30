@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-pt-[4.8rem] md:scroll-pt-[9rem] lg:scroll-pt-[3.52rem]">
+<html lang="en" class="scroll-smooth scroll-pt-[4.8rem] md:scroll-pt-[10rem] lg:scroll-pt-[3.52rem]">
 
 <head>
     <meta charset="UTF-8">
@@ -53,7 +53,7 @@
 
 <body class="bg-pale" id="home">
     <!-- Navbar -->
-    <header class="sticky top-0 bg-pale">
+    <header class="sticky top-0 bg-pale drop-shadow-md">
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
             <a href="#home" class="font-bold tracking-[0.3rem] text-navy hover:navShadow duration-500 md:text-[2rem] lg:text-[1rem]">js</a>
             <div>
@@ -108,7 +108,7 @@
         <div class="flex items-center md:mt-[8rem]">
             <section class="bg-pale h-auto p-[2rem] md:h-screen">
                 <div class="mt-[5rem] flex bg-green h-[15rem] items-center justify-center md:mx-[10rem]">
-                    <img id="about"src="pictures/mtl.JPG" class="h-[20rem] md:h-[25rem] lg:h-[28rem] lg:-ml-[20rem]">
+                    <img id="about"src="pictures/mtl.JPG" class="h-[20rem] md:h-[25rem] lg:h-[28rem] ">
                 </div>
                 <div>
                     <p class="font-black mx-[1rem] mt-[6.3rem] tracking-[2px] text-[1rem] text-darkGreen text-center aboutShadow 
@@ -128,9 +128,10 @@
             </section>
         </div>
         <!-- Projects Section -->
-        <div id="projects" class="h-[15rem] bg-paler items-center flex justify-center">
+        <!-- sm to md -->
+        <div id="projects" class="h-[15rem] bg-paler items-center flex justify-center lg:hidden">
             <div class="bg-green flex justify-center h-[70%] w-[80%]">
-                <h1 class="font-bold tracking-[0.3rem] text-[2rem] text-darkGreen aboutShadow -mt-[1.7rem] -ml-[1rem] md:text-[3rem] md:-mt-[2.5rem]">my work</h1>
+                <h1 class="font-bold tracking-[0.3rem] text-[2rem] text-darkGreen aboutShadow -mt-[1.7rem] -ml-[1rem] md:text-[3rem] md:-mt-[2.5rem] lg:">my work</h1>
                 <!-- Projects go here -->
                 <div class="m-auto">
                     <div class="bg-blue"><!--Project 1--></div>
@@ -138,7 +139,8 @@
             </div>
         </div>
         <!-- Contact -->
-        <section class="h-screen flex justify-center items-center">
+        <!-- sm to md -->
+        <section class="h-screen flex justify-center items-center lg:hidden">
             <div id="contact" class="bg-paler h-90vh w-[85%]">
                 <div class="flex justify-center -mb-[6rem] mt-[2rem] md:-mb-[9.5rem] md:mt-[4rem]">
                     <img alt="lets-connect" src="pictures/connect.png" class="md:h-[13rem]">
